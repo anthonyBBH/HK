@@ -118,7 +118,7 @@
 }
 
 
-.sts{
+#ert .sts{
     max-width:354px;
     width: 100%;
     height:50px;
@@ -145,7 +145,7 @@
 
 
 .play_border {
-    margin:0 22px 0 15px;
+    margin:0 22px 0 5px;
     border: 2px solid rgba(0,0,0,0.7);
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -200,7 +200,7 @@
     max-width: 1200px;
     height: 519px;
     position: relative;
-    background: black;
+    background: lime;
 }
 
 
@@ -404,6 +404,111 @@
 	z-index: 5;
 }
 
+
+
+/* * * * * * * * * * *  M O D U L E  F O U R   */
+
+
+
+.hk_module_inner_inbetween{
+    width:99.99%;
+    height:326px;
+    background:url('../images/bumper_one.png') no-repeat center center;
+    background-size: 100%;
+    margin: 30px 0 0 0;
+
+}
+
+
+
+
+
+
+
+
+/* * * * * * * * * * *  M O D U L E  F I V E  */
+
+
+.hk_module_wrap_m5{
+    width: 99.99%;
+    max-width: 1200px;
+    height: 530px;
+    position: relative;
+    background: white;
+}
+
+
+
+#asasar{
+    height:530px;
+    background: white;
+}
+
+
+#asasar_caption{
+    max-width:354px;
+    width: 90%;
+    height:250px;
+    margin: 65px auto 30px auto;
+	padding: 0 10px 0 24px;
+    line-height: 24px;
+    border-left: 1px solid #858585;
+    color: #858585;
+    font-weight: 100;
+}
+
+
+
+#app_slider{
+    height:530px;
+    background:#ffffff url('../images/ipad_view.png') no-repeat right bottom;
+    background-size: 100%;
+}
+
+#application_icons{
+    width:275px;
+    height:50px;
+    margin:47px 0 0 0;
+}
+
+
+#asasar .sts{
+    max-width:354px;
+    width: 100%;
+    height:50px;
+    margin: 0 auto;
+    color: #58595b;
+}
+
+
+/* * * * * * * * * * *  M O D U L E  S I X  */
+
+
+.hk_module_inner_m6{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: url('../images/tv_spot.png') no-repeat center center;
+    background-size: 100%;
+}
+
+#dltms{
+    width:48%;
+    height:0;
+    padding-bottom:6.5%; 
+    margin: 0 auto;
+    position: absolute;
+    top:42%;
+    left:22.5%;
+    border: #ffffff 2px solid; 
+    text-align: center;
+}
+
+#dltms h1{
+    text-align: center;
+    line-height: 80px;
+    color: #ffffff;
+}
 
 /* #Page Styles
 ================================================== */
