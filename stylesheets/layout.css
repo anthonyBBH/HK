@@ -206,86 +206,156 @@
 
 
 .hk_module_inner_m3{
-    position:absolute;
     width:99.99%;
     height:100%;
     background: white;
 }
 
-.tabs {
-    list-style-type: none; 
-    width: 99.99%;
-    height: 100px;
-    background-color: #1c1c1b;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0px;
-    display:table;
-    overflow: hidden;
-    text-decoration:none;
+.accordion {
+  padding: 0;
+  margin: 0 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: 1em;
+  position: relative;
 }
- 
-    /*----- Tab Links -----*/
-    /* Clearfix */
-    .tab-links:after {
-        display:block;
-        clear:both;
-        content:'';
-    }
 
-    .tab-links {
-    } 
-    .tab-links li {
-    float: left;
-    padding: 2px;
-    width: 18.99%;
-    margin:15px auto 0 auto;
-    cursor: pointer;
-    font-size: 1.3em;
-    text-decoration:none;
-    list-style:none;
-    }
- 
-        .tab-links a h2{
-          line-height: 40px;
-            padding:9px 15px;
-            display:inline-block;
-            color:#fff;
-            font-weight: 800;
-            transition:all linear 0.15s;
-        }
- 
-        .tab-links a h2:hover {
-          line-height: 40px;
-          padding-bottom: 0px;	
-          border-bottom:1px solid #00a1e3;
-          color:#888;
-          text-decoration:none;
-        }
- 
-    li.active a, li.active a:hover {
-        color:#4c4c4c;
-    }
- 
-    /*----- Content of Tabs -----*/
-    .tab-content {
-        background:#fff;
-        text-align:left;
-        height: 463px;
-    }
- 
-        .tab {
-        	height: 624px;
-            display:none;
-        }
- 
-        .tab.active {
-            display:block;
-        }
+.accordion__title {
+  width:20%;
+  height: 83px;
+  background-color: #1c1c1b;
+  color: #ffffff;
+  float: left;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.accordion__title h2{
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  line-height: 83px;
+}
+
+.accordion__title:hover{
+    border-bottom:3px solid #00a1e3;
+}
 
 
+.no-js .accordion__title {
+  float: none;
+  height:auto;
+  cursor:auto;
+  margin:0;
+  padding:0 2em;
+}
 
-#prod_caption{
+.accordion__content {
+  float: right;
+  width: 100%;
+  margin: 83px 0 0 -100%;
+}
+
+.no-js .accordion__content {
+  float:left;
+  margin:0;
+}
+
+.accordion__title:hover,
+.accordion__title.active {
+  background-color: #1c1c1b;
+  color: white;
+}
+
+.no-js .accordion__title:hover {
+  background-color:#ccc;
+  color:#fff;
+}
+
+.accordion__title.active {
+  border-top-color:lime;
+}
+
+@media (max-width: 48em) {
+  
+  .accordion {
+    border: 1px solid grey;
+  }
+  
+  .accordion__title,
+  .accordion__content { 
+  	width: 99.99%;
+    float: none;
+    margin: 0;
+  }
+
+  .accordion__title h2{
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  line-height: 3px;
+  margin-top:0px;: 
+}
+  
+  .accordion__title:first-child {
+    border:none;
+  }
+  
+ .accordion__title.active {
+  border-top-color:#eee;
+  }
+  
+  .accordion__title.active, .accordion__title:hover {
+    background:#777;
+  }
+  
+  .accordion__title:before {
+  content:"+";
+  text-align:center;
+  width:2em;
+  display:inline-block;
+  }
+ .accordion__title.active:before {
+  content:"-";
+  }
+  
+ .overflow-scrolling {
+  overflow-y: scroll;
+  height:11em;
+  padding:1em 1em 0 1em;
+  /* Warning: momemtum scrolling seems buggy on iOS 7  */
+  -webkit-overflow-scrolling: touch;
+  }
+
+  .accordion__content {
+    position:relative;
+    overflow:hidden;
+    padding:0;
+  }
+  
+   .no-js .accordion__content {
+    padding:1em;
+    overflow:auto;
+    display:block;
+  }
+  
+  .accordion__content:after {
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:50px;
+    border-radius:10px 0 0 10px / 50% 0 0 50%;
+    box-shadow:-5px 0 10px rgba(0, 0, 0, 0.5);
+    content:'';
+}
+   
+}
+
+
+
+
+.prod_caption{
     max-width:354px;
     width: 90%;
     height:220px;
@@ -298,15 +368,15 @@
 	position: absolute;
 }
 
-#prod_caption > h1:first-child{
+.prod_caption > h1:first-child{
     color:#00a1e3;
     font-size: 2.8em;
     font-weight: 100;
 }
-#prod_caption > h1:last-child{
+.prod_caption > h1:last-child{
     margin-bottom:-.2em;
 }
-#prod_slider{
+.prod_slider{
     width:57%;
     height:0;
     padding-bottom:100%; 
@@ -324,7 +394,7 @@
 	padding: 0 10px 0 24px;
 }
 
-#prod{
+.prod{
 	width: 99.99%;
 	height: 463px;
 	background: url('../images/omni_10.png') no-repeat center top;
@@ -332,7 +402,6 @@
 	float: left;
 	position: relative;
 	z-index: 5;
-	background-color: blue;
 }
 
 
