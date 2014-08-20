@@ -83,7 +83,7 @@
 
 
 .hk_module_wrap_m2{
-    width: 100%;
+    width: 99.99%;
     max-width: 1200px;
     height: 519px;
     position: relative;
@@ -187,6 +187,7 @@
 
 
 
+/* * * * * * * * * * *  M O D U L E  T H R E E  */
 
 
 
@@ -194,9 +195,145 @@
 
 
 
+.hk_module_wrap_m3{
+    width: 99.99%;
+    max-width: 1200px;
+    height: 519px;
+    position: relative;
+    background: black;
+}
 
 
 
+.hk_module_inner_m3{
+    position:absolute;
+    width:99.99%;
+    height:100%;
+    background: white;
+}
+
+.tabs {
+    list-style-type: none; 
+    width: 99.99%;
+    height: 100px;
+    background-color: #1c1c1b;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    display:table;
+    overflow: hidden;
+    text-decoration:none;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+
+    .tab-links {
+    } 
+    .tab-links li {
+    float: left;
+    padding: 2px;
+    width: 18.99%;
+    margin:15px auto 0 auto;
+    cursor: pointer;
+    font-size: 1.3em;
+    text-decoration:none;
+    list-style:none;
+    }
+ 
+        .tab-links a h2{
+          line-height: 40px;
+            padding:9px 15px;
+            display:inline-block;
+            color:#fff;
+            font-weight: 800;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a h2:hover {
+          line-height: 40px;
+          padding-bottom: 0px;	
+          border-bottom:1px solid #00a1e3;
+          color:#888;
+          text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        background:#fff;
+        text-align:left;
+        height: 463px;
+    }
+ 
+        .tab {
+        	height: 624px;
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
+
+
+
+#prod_caption{
+    max-width:354px;
+    width: 90%;
+    height:220px;
+    margin: 139px 0 0 65px;
+	padding: 0 10px 0 24px;
+    line-height: 24px;
+    border-left: 1px solid #858585;
+    color: #fff;
+    font-weight: 100;
+	position: absolute;
+}
+
+#prod_caption > h1:first-child{
+    color:#00a1e3;
+    font-size: 2.8em;
+    font-weight: 100;
+}
+#prod_caption > h1:last-child{
+    margin-bottom:-.2em;
+}
+#prod_slider{
+    width:57%;
+    height:0;
+    padding-bottom:100%; 
+    margin:0;
+    position: absolute;
+    top:0%;
+    right:0%;
+    background:url('../img/overview_img-1.png') no-repeat center top;
+}
+
+
+.shop_now{
+    position: absolute;
+    margin: 312px 0 0 65px;
+	padding: 0 10px 0 24px;
+}
+
+#prod{
+	width: 99.99%;
+	height: 463px;
+	background: url('../images/omni_10.png') no-repeat center top;
+	background-size: 100%;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: blue;
+}
 
 
 /* #Page Styles
