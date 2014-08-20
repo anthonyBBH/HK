@@ -1,11 +1,4 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
+
 
 /* Table of Content
 ==================================================
@@ -17,6 +10,195 @@
 /* #Site Styles
 ================================================== */
 
+
+
+
+/* * * * * * * * * *  * M O D U L E S  */
+
+.hk_module_inner{
+    position:absolute;
+    width:99.99%;
+    height:99.99%;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #000;
+}
+
+/* * * * * * * * * * *  M O D U L E  O N E  */
+
+
+.hk_module_wrap{
+    position: relative;
+    padding-bottom: 51.50%;
+    height: 0;
+}
+
+
+
+
+#intro_video{
+    width:99.9%;
+    height: 100%;
+    background: url('../img/first_bg.jpg') no-repeat center center;
+    background-size: 100%;
+    background-color: lime;
+}
+
+
+#intro_cta{
+    max-width:500px;
+    width: 100%;
+    height:60px;
+    margin: 0 0 0 -250px;
+    position: absolute;
+    top:74.7%;
+    left:50%;
+    border: #ffffff 2px solid; 
+}
+
+
+
+.scroll_to_see_bullet{
+    width:30px;
+    height:30px;
+    position: relative;
+    margin: 14px 15px 0 30px;
+    float:left;
+    background: transparent url("../img/see_the_system_btn.png") no-repeat center center;
+    background-size: 99.9%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * *  M O D U L E  T W O  */
+
+
+.hk_module_wrap_m2{
+    width: 100%;
+    max-width: 1200px;
+    height: 519px;
+    position: relative;
+    background: white;
+}
+
+
+
+#ert{
+    height:519px;
+    background: white;
+}
+
+
+#ert_caption{
+    max-width:354px;
+    width: 90%;
+    height:220px;
+    margin: 127px auto 0;
+	padding: 0 10px 0 24px;
+    line-height: 24px;
+    border-left: 1px solid #858585;
+    color: #858585;
+    font-weight: 100;
+}
+
+
+
+#ert_slider{
+    height:519px;
+    background:url('../images/overview_img-1.png') no-repeat center top;
+}
+
+
+.sts{
+    max-width:354px;
+    width: 100%;
+    height:50px;
+    margin: 0 auto;
+    color: #58595b;
+}
+
+
+
+
+
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	position: absolute;
+	top:149px;
+	left:43%;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 16px solid white;
+}
+
+
+
+.play_border {
+    margin:0 22px 0 15px;
+    border: 2px solid rgba(0,0,0,0.7);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+
+   
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    float: left;
+}
+.play_border:hover{
+    border-color: transparent;
+}
+.play_border:hover .play_button{
+    border-left: 10px solid rgba(0,0,0,0.5);
+}
+.play_border:active,.play_border:focus{
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5.play_button:hoverpx 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.play_button {
+    position:relative;
+    top: 10px;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(0,0,0,0.8);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* #Page Styles
 ================================================== */
 
@@ -24,13 +206,58 @@
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+			#ert_caption{
+				padding: 0 10px 0 24px;
+			}
+
+			#sts h2{
+				font-size: 15px;
+			}
+
+			#ert_caption p{
+			    font-size: 11px;
+			}
+
+
+
+
+
+
+			.play_border {
+			    margin:0 15px 0 15px;
+			}
+
+
+			.arrow-right {
+				width: 0; 
+				height: 0; 
+				position: absolute;
+				top:149px;
+				left:40.6%;
+			}
+
+
+
+	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+					.arrow-right {
+				display: none;
+				border-top: 16px solid transparent;
+				border-bottom: 16px solid transparent;
+				border-left: 16px solid transparent;
+			}
+
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
