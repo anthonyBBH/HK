@@ -422,7 +422,7 @@
 
 
 
-
+.color{background: red;}
 
 
 
@@ -510,6 +510,107 @@
     color: #ffffff;
 }
 
+
+
+/* * * * * * * * * * *  M O D U L E  S E V E N  */
+
+
+.hk_module_inner_m7{
+    width:99.99%;
+    height:100%;
+    background: url('../img/Xm5_bg_test.png') no-repeat center center;
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.hk_module_inner_m7 header{
+	margin: 73px 0 50px 0;
+	text-align: center;
+}
+
+.setup_wrap{
+    width:960px;
+    height:295px;
+    margin: 0 auto;
+    text-align:center;
+    background: lime;
+}
+
+.setup_step {
+width: 265px;
+height: 265px;
+float: left;
+margin: 0 2%;
+}
+
+.setup_instruct{
+    width:290px;
+    height:290px;
+    display:inline-block;
+    margin-right:0px;
+}
+
+.setup_img{
+    width: 205px;
+    float:left;
+    margin: 10px 0 0 15px;
+}
+
+.step_number{
+    width:40px;
+    height:50px;
+    float:left;
+    margin: 25px 0 0 0px;
+    border-right:solid #000 1px; 
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: #08b189;
+    display:inline-block; 
+    vertical-align:middle;
+}
+
+.setup_caption{
+	width: 190px;
+	height: 100px;
+	margin: 12px 0 0 8px;
+	color: #939598;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	padding: 20px 0 0 55px;
+    }
+
+.setup_caption p{
+	font-size: 12px;
+    }
+
+.support_cta{
+    width:500px;
+    height: 50px;
+    margin: 30px auto;
+    clear: both;
+    text-align: center;
+}
+
+
+
+.support_cta h1{
+    font-size: 20px;
+    color:#00a1e3;
+}
+
+
+.hk_module_inner_m6 header h3{
+    width:99.99%;
+    text-align: center;
+    color: #000;
+    font-size: 2.5em;
+    padding:0;
+    margin-top: 80px;
+}
+
+
 /* #Page Styles
 ================================================== */
 
@@ -518,6 +619,20 @@
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
+			.setup_step {
+				width: 99.99%;
+				height: 295px;
+				}
+
+
+
+			.setup_wrap{
+				width: 101%;
+				height: 885px;
+			    margin: 0 auto;
+			    text-align:center;
+			    background: blue;
+			}
 
 	}
 
@@ -557,6 +672,30 @@
 
 
 
+.setup_wrap{
+    width:99.99%;
+    height:295px;
+    margin: 0 auto;
+    text-align:center;
+    background: teal;
+}
+
+			.setup_step {
+				width: 255px;
+				height: 265px;
+				float: left;
+				margin: 0;
+				}
+
+				.color{
+					background: lime;
+				}
+
+				.setup_img{
+				    width: 190px;
+				    float:left;
+				    margin: 10px 0 0 15px;
+				}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -567,6 +706,8 @@
 				border-bottom: 16px solid transparent;
 				border-left: 16px solid transparent;
 			}
+
+	
 
 	}
 
