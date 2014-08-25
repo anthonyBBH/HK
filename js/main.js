@@ -1,23 +1,41 @@
-if($(window).width() > 768){
 
-// Hide all but first tab content on larger viewports
-$('.accordion__content:not(:first)').hide();
 
-// Activate first tab
-$('.accordion__title:first-child').addClass('active');
 
-} else {
-  
-// Hide all content items on narrow viewports
-$('.accordion__content').hide();
-};
 
-// Wrap a div around content to create a scrolling container which we're going to use on narrow viewports
-$( ".accordion__content" ).wrapInner( "<div class='overflow-scrolling'></div>" );
+$(document).ready(function(){
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#tabInfo');
+                var $name = $('span', $info);
 
-// The clicking action
-$('.accordion__title').on('click', function() {
-$('.accordion__content').hide();
-$(this).next().show().prev().addClass('active').siblings().removeClass('active');
+                $name.text($tab.text());
+
+                $info.show();
+            }
+        });
+
+        $('#verticalTab').easyResponsiveTabs({
+            type: 'vertical',
+            width: 'auto',
+            fit: true
+        });
+
+$('div.demo-show> div').hide(); 
+    $('div.demo-show> h5').click(function() {
+        $(this).next('div').slideToggle('normal')
+        .siblings('div:visible').slideUp('normal');
+    $(this).toggleClass('opened');
+    return false;
+    });
+
+    
 });
 
